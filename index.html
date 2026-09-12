@@ -9,7 +9,6 @@
   --dark-2:#231F20;
   --dark-3:#30282C;
   --wine:#5A1830;
-  --wine-dark:#310917;
   --gray:#646064;
   --soft-gray:#F5F2F3;
   --border:#E9E1E4;
@@ -41,7 +40,10 @@
   padding-right:24px;
 }
 
-/* PORTADA */
+
+/* =========================================================
+   PORTADA
+========================================================= */
 
 #sise-andragogia-home .sise-hero{
   position:relative;
@@ -161,13 +163,16 @@
   box-shadow:0 18px 34px rgba(255,0,80,.32);
 }
 
-/* DATOS DEL CURSO */
+
+/* =========================================================
+   DATOS DEL CURSO
+========================================================= */
 
 #sise-andragogia-home .sise-stats-wrap{
   position:relative;
   z-index:4;
-  max-width:1180px;
-  margin:-54px auto 42px;
+  max-width:980px;
+  margin:-44px auto 36px;
   padding:0 24px;
 }
 
@@ -177,14 +182,14 @@
   border-collapse:separate;
   border-spacing:0;
   border:1px solid rgba(255,255,255,.12);
-  border-radius:18px;
+  border-radius:14px;
   background:linear-gradient(135deg,#211D1F 0%,#2A2226 100%);
-  box-shadow:0 18px 45px rgba(35,31,32,.18);
+  box-shadow:0 14px 32px rgba(35,31,32,.16);
 }
 
 #sise-andragogia-home .sise-stats td{
   width:20%;
-  padding:26px 18px;
+  padding:16px 12px;
   color:#FFFFFF;
   text-align:center;
   vertical-align:top;
@@ -199,32 +204,46 @@
   display:flex;
   align-items:center;
   justify-content:center;
-  width:46px;
-  height:46px;
-  margin:0 auto 13px;
+  width:36px;
+  height:36px;
+  margin:0 auto 9px;
   border-radius:50%;
   color:#FFFFFF;
   background:linear-gradient(135deg,#FF0050,#FF386F);
-  box-shadow:0 0 0 6px rgba(255,0,80,.1);
-  font-size:18px;
+  box-shadow:0 0 0 4px rgba(255,0,80,.1);
+  font-size:14px;
   font-weight:900;
 }
 
+#sise-andragogia-home .sise-stat-icon svg{
+  width:18px;
+  height:18px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
 #sise-andragogia-home .sise-stat-value{
-  margin:0 0 4px;
+  margin:0 0 3px;
   color:#FFFFFF;
-  font-size:21px;
+  font-size:18px;
   font-weight:800;
+  line-height:1.2;
 }
 
 #sise-andragogia-home .sise-stat-label{
   margin:0;
   color:rgba(255,255,255,.67);
-  font-size:13px;
-  line-height:1.35;
+  font-size:12px;
+  line-height:1.3;
 }
 
-/* INSTRUCCIÓN */
+
+/* =========================================================
+   INSTRUCCIÓN
+========================================================= */
 
 #sise-andragogia-home .sise-intro{
   margin-bottom:30px;
@@ -241,11 +260,14 @@
   line-height:1.55;
 }
 
-/* NAVEGACIÓN */
+
+/* =========================================================
+   NAVEGACIÓN
+========================================================= */
 
 #sise-andragogia-home .sise-navigation{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(3,1fr);
   gap:12px;
   margin-bottom:18px;
 }
@@ -265,7 +287,7 @@
   background:#FFFFFF;
   box-shadow:0 7px 18px rgba(35,31,32,.06);
   cursor:pointer;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family:Arial,Helvetica,sans-serif;
   font-size:15px;
   font-weight:800;
   text-align:center;
@@ -299,11 +321,13 @@
   font-weight:900;
 }
 
-/* CAJA DINÁMICA */
+
+/* =========================================================
+   CAJA DINÁMICA
+========================================================= */
 
 #sise-andragogia-home .sise-dynamic-box{
   overflow:hidden;
-  min-height:530px;
   border:1px solid var(--border);
   border-radius:18px;
   background:#FFFFFF;
@@ -369,14 +393,17 @@
   }
 }
 
-#sise-andragogia-home .sise-dynamic-body p{
+#sise-andragogia-home .sise-dynamic-body > p{
   margin:0 0 22px;
   color:#5B5457;
   font-size:17px;
   line-height:1.65;
 }
 
-/* SOBRE EL CURSO */
+
+/* =========================================================
+   SOBRE EL CURSO
+========================================================= */
 
 #sise-andragogia-home .sise-section-title{
   display:flex;
@@ -416,6 +443,7 @@
 #sise-andragogia-home .sise-audience-card p{
   margin:0;
   color:#3C3336;
+  font-size:16px;
 }
 
 #sise-andragogia-home .sise-goal-card{
@@ -461,7 +489,10 @@
   color:rgba(255,255,255,.82);
 }
 
-/* MÓDULOS */
+
+/* =========================================================
+   MÓDULOS
+========================================================= */
 
 #sise-andragogia-home .sise-modules-grid{
   display:grid;
@@ -472,8 +503,8 @@
 #sise-andragogia-home .sise-module-card{
   position:relative;
   overflow:hidden;
-  min-height:390px;
-  padding:29px;
+  min-height:245px;
+  padding:27px;
   border:1px solid rgba(255,255,255,.1);
   border-radius:17px;
   color:#FFFFFF;
@@ -481,6 +512,8 @@
     radial-gradient(circle at 100% 0,rgba(255,0,80,.2),transparent 40%),
     linear-gradient(145deg,#1D1A1C 0%,#2B2528 100%);
   box-shadow:0 14px 28px rgba(35,31,32,.14);
+  display:flex;
+  flex-direction:column;
 }
 
 #sise-andragogia-home .sise-module-card:after{
@@ -497,23 +530,25 @@
 #sise-andragogia-home .sise-module-top{
   display:flex;
   align-items:center;
-  gap:16px;
-  margin-bottom:24px;
+  gap:15px;
+  margin-bottom:20px;
+  position:relative;
+  z-index:2;
 }
 
 #sise-andragogia-home .sise-module-number{
   display:flex;
-  flex:0 0 auto;
   align-items:center;
   justify-content:center;
-  width:58px;
-  height:58px;
+  width:50px;
+  height:50px;
+  flex:0 0 50px;
   border-radius:50%;
   color:#FFFFFF;
   background:linear-gradient(135deg,#FF0050,#FF477C);
-  font-size:23px;
+  font-size:20px;
   font-weight:900;
-  box-shadow:0 0 0 7px rgba(255,0,80,.11);
+  box-shadow:0 0 0 6px rgba(255,0,80,.11);
 }
 
 #sise-andragogia-home .sise-module-label{
@@ -525,47 +560,21 @@
 }
 
 #sise-andragogia-home .sise-module-card h3{
-  min-height:94px;
-  margin:0 0 14px;
+  position:relative;
+  z-index:2;
+  margin:0 0 12px;
   color:#FFFFFF;
-  font-size:24px;
-  line-height:1.3;
+  font-size:25px;
+  line-height:1.25;
 }
 
-#sise-andragogia-home .sise-module-card p{
-  margin:0 0 18px;
-  color:rgba(255,255,255,.78);
-  font-size:16px;
-  line-height:1.55;
-}
-
-#sise-andragogia-home .sise-module-topics{
-  margin:0 0 24px;
-  padding:16px 17px;
-  border:1px solid rgba(255,255,255,.10);
-  border-radius:12px;
-  background:rgba(255,255,255,.05);
-}
-
-#sise-andragogia-home .sise-module-topics strong{
-  display:block;
-  margin-bottom:9px;
-  color:#FF8AAF;
+#sise-andragogia-home .sise-module-help{
+  position:relative;
+  z-index:2;
+  margin:0 0 20px;
+  color:rgba(255,255,255,.68);
   font-size:13px;
-  letter-spacing:.8px;
-  text-transform:uppercase;
-}
-
-#sise-andragogia-home .sise-module-topics ul{
-  margin:0;
-  padding-left:20px;
-}
-
-#sise-andragogia-home .sise-module-topics li{
-  margin:6px 0;
-  color:rgba(255,255,255,.82);
-  font-size:15px;
-  line-height:1.4;
+  line-height:1.5;
 }
 
 #sise-andragogia-home .sise-module-btn{
@@ -574,12 +583,14 @@
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  padding:13px 20px;
+  align-self:flex-start;
+  margin-top:auto;
+  padding:12px 19px;
   border-radius:9px;
   color:#FFFFFF;
   background:var(--pink);
   text-decoration:none;
-  font-size:15px;
+  font-size:14px;
   font-weight:700;
 }
 
@@ -589,17 +600,103 @@
   transform:translateY(-2px);
 }
 
-/* EVALUACIÓN */
+
+/* =========================================================
+   SÍLABO
+========================================================= */
+
+#sise-andragogia-home .sise-syllabus-card{
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  margin-top:18px;
+  padding:22px 24px;
+  border:1px solid #F1D5DE;
+  border-left:6px solid var(--pink);
+  border-radius:14px;
+  background:linear-gradient(105deg,#FFF1F5 0%,#FFFFFF 70%);
+}
+
+#sise-andragogia-home .sise-syllabus-card:after{
+  content:"";
+  position:absolute;
+  width:120px;
+  height:120px;
+  right:-48px;
+  top:-62px;
+  border:1px solid rgba(255,0,80,.14);
+  border-radius:50%;
+}
+
+#sise-andragogia-home .sise-syllabus-info{
+  position:relative;
+  z-index:2;
+}
+
+#sise-andragogia-home .sise-syllabus-label{
+  display:block;
+  margin-bottom:4px;
+  color:var(--pink);
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:1.2px;
+  text-transform:uppercase;
+}
+
+#sise-andragogia-home .sise-syllabus-card h3{
+  margin:0 0 5px;
+  color:#231F20;
+  font-size:21px;
+}
+
+#sise-andragogia-home .sise-syllabus-card p{
+  margin:0;
+  color:#655C60;
+  font-size:13px;
+  line-height:1.5;
+}
+
+#sise-andragogia-home .sise-syllabus-btn{
+  position:relative;
+  z-index:2;
+  display:inline-flex;
+  flex:0 0 auto;
+  align-items:center;
+  justify-content:center;
+  min-width:145px;
+  padding:12px 18px;
+  border-radius:9px;
+  color:#FFFFFF;
+  background:var(--dark-2);
+  text-decoration:none;
+  font-size:14px;
+  font-weight:800;
+}
+
+#sise-andragogia-home .sise-syllabus-btn:hover{
+  color:#FFFFFF;
+  background:var(--pink);
+  transform:translateY(-2px);
+}
+
+
+/* =========================================================
+   EVALUACIÓN
+========================================================= */
 
 #sise-andragogia-home .sise-evaluation-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:14px;
+  align-items:stretch;
 }
 
 #sise-andragogia-home .sise-evaluation-card{
-  min-height:260px;
-  padding:26px 23px;
+  min-height:290px;
+  padding:24px 21px;
   border:1px solid #E9E1E4;
   border-top:5px solid var(--pink);
   border-radius:16px;
@@ -611,18 +708,18 @@
   display:flex;
   align-items:center;
   justify-content:center;
-  width:50px;
-  height:50px;
-  margin-bottom:20px;
+  width:48px;
+  height:48px;
+  margin-bottom:17px;
   border-radius:50%;
   color:#FFFFFF;
   background:linear-gradient(135deg,#FF0050,#FF467B);
-  font-size:18px;
+  font-size:17px;
   font-weight:900;
 }
 
 #sise-andragogia-home .sise-evaluation-card h3{
-  margin:0 0 12px;
+  margin:0 0 10px;
   color:#231F20;
   font-size:20px;
   line-height:1.25;
@@ -631,9 +728,90 @@
 #sise-andragogia-home .sise-evaluation-card p{
   margin:0;
   color:#665E61;
-  font-size:15px;
-  line-height:1.55;
+  font-size:14px;
+  line-height:1.5;
 }
+
+
+/* =========================================================
+   COEVALUACIÓN
+========================================================= */
+
+#sise-andragogia-home .sise-coeval-card{
+  display:flex;
+  flex-direction:column;
+}
+
+#sise-andragogia-home .sise-coeval-intro{
+  margin-bottom:13px !important;
+}
+
+#sise-andragogia-home .sise-coeval-flow{
+  display:flex;
+  align-items:stretch;
+  gap:5px;
+  margin:5px 0 16px;
+}
+
+#sise-andragogia-home .sise-coeval-step{
+  flex:1;
+  min-width:0;
+  padding:9px 5px;
+  border:1px solid #F1D5DE;
+  border-radius:8px;
+  background:#FFF4F7;
+  text-align:center;
+}
+
+#sise-andragogia-home .sise-coeval-step strong{
+  display:block;
+  margin-bottom:3px;
+  color:var(--pink);
+  font-size:11px;
+  font-weight:900;
+}
+
+#sise-andragogia-home .sise-coeval-step span{
+  display:block;
+  color:#4D4548;
+  font-size:10px;
+  line-height:1.2;
+  font-weight:700;
+}
+
+#sise-andragogia-home .sise-coeval-arrow{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 12px;
+  color:var(--pink);
+  font-size:18px;
+  font-weight:900;
+}
+
+#sise-andragogia-home .sise-coeval-manual-btn{
+  width:100%;
+  margin-top:auto;
+  padding:11px 13px;
+  border:0;
+  border-radius:8px;
+  color:#FFFFFF;
+  background:var(--dark-2);
+  cursor:pointer;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:13px;
+  font-weight:800;
+}
+
+#sise-andragogia-home .sise-coeval-manual-btn:hover{
+  background:var(--pink);
+  transform:translateY(-1px);
+}
+
+
+/* =========================================================
+   APROBACIÓN
+========================================================= */
 
 #sise-andragogia-home .sise-pass-card{
   display:flex;
@@ -672,111 +850,165 @@
   color:#FFFFFF;
 }
 
-/* DESCARGABLES */
 
-#sise-andragogia-home .sise-download-content{
+/* =========================================================
+   MODAL COEVALUACIÓN
+========================================================= */
+
+#sise-andragogia-home .sise-coeval-modal{
+  position:fixed;
+  inset:0;
+  z-index:99999;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:22px;
+  background:rgba(17,14,16,.78);
+}
+
+#sise-andragogia-home .sise-coeval-modal.is-open{
+  display:flex;
+}
+
+#sise-andragogia-home .sise-coeval-modal-panel{
+  width:100%;
+  max-width:720px;
+  max-height:90vh;
+  overflow-y:auto;
+  border-radius:17px;
+  background:#FFFFFF;
+  box-shadow:0 25px 70px rgba(0,0,0,.28);
+}
+
+#sise-andragogia-home .sise-coeval-modal-head{
   position:relative;
   overflow:hidden;
-  min-height:330px;
-  padding:50px 30px;
-  border-radius:16px;
-  text-align:center;
+  padding:27px 30px;
   color:#FFFFFF;
   background:
-    radial-gradient(circle at 15% 90%,rgba(255,0,80,.18),transparent 34%),
-    radial-gradient(circle at 90% 10%,rgba(255,0,80,.24),transparent 33%),
-    linear-gradient(135deg,#171416 0%,#33101E 100%);
+    radial-gradient(circle at 95% 0,rgba(255,0,80,.3),transparent 40%),
+    linear-gradient(130deg,#211D1F,#481326);
 }
 
-#sise-andragogia-home .sise-download-content:before{
-  content:"";
-  position:absolute;
-  width:230px;
-  height:230px;
-  right:-70px;
-  top:-100px;
-  border:1px solid rgba(255,255,255,.1);
-  border-radius:50%;
-}
-
-#sise-andragogia-home .sise-download-icon{
-  position:relative;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  width:72px;
-  height:72px;
-  margin:0 auto 22px;
-  border-radius:50%;
-  color:#FFFFFF;
-  background:var(--pink);
-  font-size:30px;
+#sise-andragogia-home .sise-coeval-modal-head small{
+  display:block;
+  margin-bottom:6px;
+  color:#FF9AB9;
+  font-size:11px;
   font-weight:900;
-  box-shadow:0 0 0 9px rgba(255,0,80,.12);
+  letter-spacing:1.2px;
+  text-transform:uppercase;
 }
 
-#sise-andragogia-home .sise-download-content h3{
-  position:relative;
-  margin:0 0 12px;
+#sise-andragogia-home .sise-coeval-modal-head h3{
+  margin:0;
+  padding-right:48px;
   color:#FFFFFF;
-  font-size:30px;
+  font-size:28px;
 }
 
-#sise-andragogia-home .sise-download-content p{
-  position:relative;
-  max-width:680px;
-  margin:0 auto 28px;
-  color:rgba(255,255,255,.72);
-  font-size:17px;
-}
-
-#sise-andragogia-home .sise-download-actions{
-  position:relative;
+#sise-andragogia-home .sise-coeval-close{
+  position:absolute;
+  top:16px;
+  right:18px;
   display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:12px;
-}
-
-#sise-andragogia-home .sise-download-btn{
-  display:inline-flex;
   align-items:center;
   justify-content:center;
-  min-width:190px;
-  padding:14px 22px;
-  border-radius:9px;
-  color:#231F20;
-  background:#FFFFFF;
-  text-decoration:none;
-  font-size:15px;
-  font-weight:700;
-}
-
-#sise-andragogia-home .sise-download-btn:hover{
-  color:#FFFFFF;
-  background:var(--pink);
-  transform:translateY(-2px);
-}
-
-#sise-andragogia-home .sise-download-btn-alt{
-  color:#FFFFFF;
+  width:36px;
+  height:36px;
   border:1px solid rgba(255,255,255,.25);
-  background:rgba(255,255,255,.08);
+  border-radius:50%;
+  color:#FFFFFF;
+  background:rgba(255,255,255,.07);
+  cursor:pointer;
+  font-size:20px;
+  font-weight:900;
 }
 
-#sise-andragogia-home .sise-download-btn-alt:hover{
-  color:#FFFFFF;
-  border-color:var(--pink);
+#sise-andragogia-home .sise-coeval-close:hover{
   background:var(--pink);
+  border-color:var(--pink);
+}
+
+#sise-andragogia-home .sise-coeval-modal-body{
+  padding:28px 30px 30px;
+}
+
+#sise-andragogia-home .sise-coeval-modal-intro{
+  margin:0 0 21px;
+  color:#5E5659;
+  font-size:15px;
+  line-height:1.6;
+}
+
+#sise-andragogia-home .sise-manual-route{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:10px;
+}
+
+#sise-andragogia-home .sise-manual-step{
+  display:grid;
+  grid-template-columns:42px 1fr;
+  gap:13px;
+  align-items:start;
+  padding:15px;
+  border:1px solid #EAE2E5;
+  border-radius:10px;
+  background:#FFFFFF;
+}
+
+#sise-andragogia-home .sise-manual-step-num{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  color:#FFFFFF;
+  background:var(--pink);
+  font-size:13px;
+  font-weight:900;
+}
+
+#sise-andragogia-home .sise-manual-step h4{
+  margin:1px 0 4px;
+  color:#231F20;
+  font-size:16px;
+}
+
+#sise-andragogia-home .sise-manual-step p{
+  margin:0;
+  color:#655D60;
+  font-size:13px;
+  line-height:1.5;
+}
+
+#sise-andragogia-home .sise-manual-note{
+  margin-top:17px;
+  padding:15px 17px;
+  border-left:5px solid var(--pink);
+  border-radius:8px;
+  color:#433A3D;
+  background:#FFF1F5;
+  font-size:13px;
+  line-height:1.55;
 }
 
 #sise-andragogia-home .sise-template{
   display:none !important;
 }
 
-/* RESPONSIVE */
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
 
 @media screen and (max-width:900px){
+
+  #sise-andragogia-home .sise-stats-wrap{
+    max-width:760px;
+  }
 
   #sise-andragogia-home .sise-stats,
   #sise-andragogia-home .sise-stats tbody,
@@ -797,19 +1029,11 @@
   }
 
   #sise-andragogia-home .sise-stats td:last-child{
-    grid-column:1 / -1;
-  }
-
-  #sise-andragogia-home .sise-navigation{
-    grid-template-columns:repeat(2,1fr);
+    grid-column:1/-1;
   }
 
   #sise-andragogia-home .sise-modules-grid{
     grid-template-columns:1fr;
-  }
-
-  #sise-andragogia-home .sise-module-card h3{
-    min-height:auto;
   }
 
   #sise-andragogia-home .sise-evaluation-grid{
@@ -846,12 +1070,17 @@
   }
 
   #sise-andragogia-home .sise-stats-wrap{
-    margin-top:-44px;
+    margin-top:-34px;
+    margin-bottom:30px;
     padding:0 16px;
   }
 
   #sise-andragogia-home .sise-stats tr{
     grid-template-columns:1fr;
+  }
+
+  #sise-andragogia-home .sise-stats td{
+    padding:14px 12px;
   }
 
   #sise-andragogia-home .sise-stats td:last-child{
@@ -879,7 +1108,18 @@
   }
 
   #sise-andragogia-home .sise-module-card{
-    min-height:auto;
+    min-height:215px;
+    padding:24px;
+  }
+
+  #sise-andragogia-home .sise-syllabus-card{
+    display:block;
+    padding:20px;
+  }
+
+  #sise-andragogia-home .sise-syllabus-btn{
+    width:100%;
+    margin-top:16px;
   }
 
   #sise-andragogia-home .sise-pass-card{
@@ -891,13 +1131,32 @@
     margin:0 auto 20px;
   }
 
-  #sise-andragogia-home .sise-download-content{
-    padding:42px 20px;
+  #sise-andragogia-home .sise-coeval-flow{
+    display:grid;
+    grid-template-columns:1fr;
+  }
+
+  #sise-andragogia-home .sise-coeval-arrow{
+    transform:rotate(90deg);
+    min-height:12px;
+  }
+
+  #sise-andragogia-home .sise-coeval-modal{
+    padding:12px;
+  }
+
+  #sise-andragogia-home .sise-coeval-modal-head,
+  #sise-andragogia-home .sise-coeval-modal-body{
+    padding-left:20px;
+    padding-right:20px;
   }
 }
 </style>
 
-<!-- PORTADA -->
+
+<!-- =========================================================
+     PORTADA
+========================================================= -->
 
 <div class="sise-hero">
 
@@ -935,66 +1194,171 @@
 
 </div>
 
-<!-- DATOS DEL CURSO -->
+
+<!-- =========================================================
+     DATOS DEL CURSO
+========================================================= -->
 
 <div class="sise-stats-wrap">
 
   <table class="sise-stats">
+
     <tbody>
+
       <tr>
 
-        <td>
-          <div class="sise-stat-icon">02</div>
-          <div class="sise-stat-value">Módulos</div>
-          <p class="sise-stat-label">Aprendizaje con IA en Canvas</p>
-        </td>
+
+        <!-- MÓDULOS -->
 
         <td>
-          <div class="sise-stat-icon">★</div>
-          <div class="sise-stat-value">Intermedio</div>
-          <p class="sise-stat-label">Nivel del curso</p>
+
+          <div class="sise-stat-icon">
+
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <polygon points="12 2 22 7 12 12 2 7 12 2"></polygon>
+              <polyline points="2 12 12 17 22 12"></polyline>
+              <polyline points="2 17 12 22 22 17"></polyline>
+            </svg>
+
+          </div>
+
+          <div class="sise-stat-value">
+            Módulos
+          </div>
+
+          <p class="sise-stat-label">
+            Aprendizaje con IA en Canvas
+          </p>
+
         </td>
 
-        <td>
-          <div class="sise-stat-icon">4h</div>
-          <div class="sise-stat-value">4 horas</div>
-          <p class="sise-stat-label">Tiempo estimado</p>
-        </td>
+
+        <!-- NIVEL -->
 
         <td>
-          <div class="sise-stat-icon">30</div>
-          <div class="sise-stat-value">1 mes</div>
-          <p class="sise-stat-label">Aprendizaje flexible</p>
+
+          <div class="sise-stat-icon">
+            ★
+          </div>
+
+          <div class="sise-stat-value">
+            Intermedio
+          </div>
+
+          <p class="sise-stat-label">
+            Nivel del curso
+          </p>
+
         </td>
 
+
+        <!-- DURACIÓN DEL CONTENIDO -->
+
         <td>
-          <div class="sise-stat-icon">✓</div>
-          <div class="sise-stat-value">Certificación</div>
-          <p class="sise-stat-label">Nota mínima aprobatoria: 17</p>
+
+          <div class="sise-stat-icon">
+
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M12 7v5l3.5 2"></path>
+            </svg>
+
+          </div>
+
+          <div class="sise-stat-value">
+            4 horas
+          </div>
+
+          <p class="sise-stat-label">
+            Duración del contenido
+          </p>
+
         </td>
+
+
+        <!-- PLAZO PARA COMPLETARLO -->
+
+        <td>
+
+          <div class="sise-stat-icon">
+
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="16" rx="2"></rect>
+              <path d="M8 3v4"></path>
+              <path d="M16 3v4"></path>
+              <path d="M3 10h18"></path>
+              <path d="M8 14h2"></path>
+              <path d="M14 14h2"></path>
+              <path d="M8 17h2"></path>
+              <path d="M14 17h2"></path>
+            </svg>
+
+          </div>
+
+          <div class="sise-stat-value">
+            2 meses
+          </div>
+
+          <p class="sise-stat-label">
+            Plazo para completarlo
+          </p>
+
+        </td>
+
+
+        <!-- CERTIFICACIÓN -->
+
+        <td>
+
+          <div class="sise-stat-icon">
+            ✓
+          </div>
+
+          <div class="sise-stat-value">
+            Certificación
+          </div>
+
+          <p class="sise-stat-label">
+            Nota mínima aprobatoria: 17
+          </p>
+
+        </td>
+
 
       </tr>
+
     </tbody>
+
   </table>
 
 </div>
 
-<!-- NAVEGACIÓN Y CAJA DINÁMICA -->
 
-<div class="sise-container" id="sise-contenido-dinamico">
+<!-- =========================================================
+     NAVEGACIÓN
+========================================================= -->
+
+<div
+  class="sise-container"
+  id="sise-contenido-dinamico">
+
 
   <div class="sise-intro">
+
     <p>
       <strong>Instrucción:</strong>
       selecciona uno de los botones para consultar la información.
       El contenido se mostrará en una única caja dinámica.
     </p>
+
   </div>
+
 
   <div
     class="sise-navigation"
     role="tablist"
     aria-label="Secciones del curso">
+
 
     <button
       type="button"
@@ -1002,9 +1366,12 @@
       data-section="sobre-curso"
       role="tab"
       aria-selected="true">
+
       <span class="sise-nav-icon">i</span>
       Sobre el curso
+
     </button>
+
 
     <button
       type="button"
@@ -1012,9 +1379,12 @@
       data-section="modulos"
       role="tab"
       aria-selected="false">
+
       <span class="sise-nav-icon">☰</span>
       Módulos
+
     </button>
+
 
     <button
       type="button"
@@ -1022,28 +1392,25 @@
       data-section="evaluacion"
       role="tab"
       aria-selected="false">
+
       <span class="sise-nav-icon">✓</span>
       Evaluación
+
     </button>
 
-    <button
-      type="button"
-      class="sise-nav-button"
-      data-section="descargables"
-      role="tab"
-      aria-selected="false">
-      <span class="sise-nav-icon">↓</span>
-      Descargables
-    </button>
 
   </div>
 
-  <!-- ÚNICA CAJA VISIBLE -->
+
+  <!-- =====================================================
+       CAJA DINÁMICA INICIAL
+  ====================================================== -->
 
   <section
     class="sise-dynamic-box"
     aria-live="polite"
     aria-atomic="true">
+
 
     <div class="sise-dynamic-header">
 
@@ -1061,9 +1428,11 @@
 
     </div>
 
+
     <div
       class="sise-dynamic-body"
       id="sise-dynamic-body">
+
 
       <h3 class="sise-section-title">
         <span class="sise-title-number">01</span>
@@ -1077,18 +1446,20 @@
         aprendizaje y el acompañamiento estudiantil en entornos virtuales.
       </p>
 
+
       <h3 class="sise-section-title">
         <span class="sise-title-number">02</span>
         ¿A quiénes está dirigido?
       </h3>
 
       <div class="sise-audience-card">
+
         <p>
-          <strong>Docentes participantes del PAC Docente</strong>
-          que desarrollan experiencias de enseñanza y aprendizaje en
-          contextos de educación superior mediante Canvas LMS.
+          <strong>Docentes y administrativos SISE</strong>
         </p>
+
       </div>
+
 
       <h3 class="sise-section-title">
         <span class="sise-title-number">03</span>
@@ -1096,6 +1467,7 @@
       </h3>
 
       <div class="sise-goal-card">
+
         <p>
           Optimizar experiencias de aprendizaje personalizadas mediante la
           implementación estratégica de herramientas de Inteligencia Artificial
@@ -1103,7 +1475,9 @@
           digitales para mejorar la participación, orientación y seguimiento del
           estudiante con criterios de calidad pedagógica y eficiencia docente.
         </p>
+
       </div>
+
 
       <h3 class="sise-section-title">
         <span class="sise-title-number">04</span>
@@ -1112,7 +1486,9 @@
 
       <div class="sise-competence">
 
-        <strong>C4 · Uso de Tecnologías de la Información y la Comunicación (TIC)</strong>
+        <strong>
+          C4 · Uso de Tecnologías de la Información y la Comunicación (TIC)
+        </strong>
 
         <p>
           Capacidad de utilizar de manera eficiente herramientas, recursos y
@@ -1124,11 +1500,15 @@
 
       </div>
 
+
     </div>
 
   </section>
 
-  <!-- PLANTILLA: SOBRE EL CURSO -->
+
+  <!-- =====================================================
+       SOBRE EL CURSO
+  ====================================================== -->
 
   <div
     id="sise-template-sobre-curso"
@@ -1136,10 +1516,17 @@
     data-kicker="Información general"
     data-title="Conoce el propósito del curso">
 
+
     <h3 class="sise-section-title">
-      <span class="sise-title-number">01</span>
+
+      <span class="sise-title-number">
+        01
+      </span>
+
       Descripción del curso
+
     </h3>
+
 
     <p>
       En este curso implementarás estratégicamente las herramientas de
@@ -1148,25 +1535,40 @@
       aprendizaje y el acompañamiento estudiantil en entornos virtuales.
     </p>
 
+
     <h3 class="sise-section-title">
-      <span class="sise-title-number">02</span>
+
+      <span class="sise-title-number">
+        02
+      </span>
+
       ¿A quiénes está dirigido?
+
     </h3>
+
 
     <div class="sise-audience-card">
+
       <p>
-        <strong>Docentes participantes del PAC Docente</strong>
-        que desarrollan experiencias de enseñanza y aprendizaje en
-        contextos de educación superior mediante Canvas LMS.
+        <strong>Docentes y administrativos SISE</strong>
       </p>
+
     </div>
 
+
     <h3 class="sise-section-title">
-      <span class="sise-title-number">03</span>
+
+      <span class="sise-title-number">
+        03
+      </span>
+
       Logro del curso
+
     </h3>
 
+
     <div class="sise-goal-card">
+
       <p>
         Optimizar experiencias de aprendizaje personalizadas mediante la
         implementación estratégica de herramientas de Inteligencia Artificial
@@ -1174,16 +1576,26 @@
         digitales para mejorar la participación, orientación y seguimiento del
         estudiante con criterios de calidad pedagógica y eficiencia docente.
       </p>
+
     </div>
 
+
     <h3 class="sise-section-title">
-      <span class="sise-title-number">04</span>
+
+      <span class="sise-title-number">
+        04
+      </span>
+
       Competencia a desarrollar
+
     </h3>
+
 
     <div class="sise-competence">
 
-      <strong>C4 · Uso de Tecnologías de la Información y la Comunicación (TIC)</strong>
+      <strong>
+        C4 · Uso de Tecnologías de la Información y la Comunicación (TIC)
+      </strong>
 
       <p>
         Capacidad de utilizar de manera eficiente herramientas, recursos y
@@ -1195,106 +1607,146 @@
 
     </div>
 
+
   </div>
 
-  <!-- PLANTILLA: MÓDULOS -->
+
+  <!-- =====================================================
+       MÓDULOS
+  ====================================================== -->
 
   <div
     id="sise-template-modulos"
     class="sise-template"
     data-kicker="Ruta de aprendizaje"
-    data-title="Panel de contenidos">
+    data-title="Ingresa a tus módulos">
+
 
     <p>
-      Avanza por los módulos de manera progresiva. Cada etapa integra
-      contenidos, recursos y actividades aplicadas para optimizar y
-      personalizar experiencias de aprendizaje mediante IA en Canvas LMS.
+      Selecciona el módulo que deseas revisar y da clic en el botón
+      correspondiente para iniciar tu recorrido de aprendizaje.
     </p>
 
+
     <div class="sise-modules-grid">
+
 
       <article class="sise-module-card">
 
         <div class="sise-module-top">
 
-          <div class="sise-module-number">1</div>
+          <div class="sise-module-number">
+            1
+          </div>
 
           <div class="sise-module-label">
-            Primer módulo
+            Módulo 1
           </div>
 
         </div>
+
 
         <h3>
           Diseño inteligente de actividades con IA Canvas
         </h3>
 
-        <p>
-          Aplica herramientas IA de Canvas LMS para diseñar actividades e instrucciones
-          pedagógicas estructuradas que favorezcan la participación y autonomía del
-          estudiante en el aula virtual, utilizando contextos reales de enseñanza y
-          criterios institucionales.
+
+        <p class="sise-module-help">
+          Da clic para iniciar el módulo.
         </p>
 
-        <div class="sise-module-topics">
-          <strong>Temas del módulo</strong>
-          <ul>
-            <li>Descubriendo las herramientas IA de Canvas LMS para la productividad docente.</li>
-            <li>Generación asistida de actividades e instrucciones con IA Canvas.</li>
-          </ul>
-        </div>
 
         <a
           class="sise-module-btn"
           href="https://aulad.educad.pe/courses/638/pages/introduccion-2?module_item_id=5908">
+
           Iniciar módulo 1&nbsp; →
+
         </a>
 
       </article>
+
 
       <article class="sise-module-card">
 
         <div class="sise-module-top">
 
-          <div class="sise-module-number">2</div>
+          <div class="sise-module-number">
+            2
+          </div>
 
           <div class="sise-module-label">
-            Segundo módulo
+            Módulo 2
           </div>
 
         </div>
+
 
         <h3>
           Evaluación y personalización inteligente con IA Canvas
         </h3>
 
-        <p>
-          Implementa herramientas IA de Canvas LMS para diseñar evaluaciones, rúbricas y
-          estrategias de personalización del aprendizaje que optimicen el acompañamiento
-          y seguimiento del estudiante en cursos virtuales.
+
+        <p class="sise-module-help">
+          Da clic para iniciar el módulo.
         </p>
 
-        <div class="sise-module-topics">
-          <strong>Temas del módulo</strong>
-          <ul>
-            <li>Diseño de evaluaciones y rúbricas mediante IA Canvas.</li>
-            <li>Personalización del aprendizaje y optimización del aula virtual con IA Canvas.</li>
-          </ul>
-        </div>
 
         <a
           class="sise-module-btn"
           href="https://aulad.educad.pe/courses/638/pages/introduccion-3?module_item_id=5917">
+
           Iniciar módulo 2&nbsp; →
+
         </a>
 
       </article>
 
+
     </div>
+
+
+    <!-- SÍLABO -->
+
+    <div class="sise-syllabus-card">
+
+
+      <div class="sise-syllabus-info">
+
+        <span class="sise-syllabus-label">
+          Documento del curso
+        </span>
+
+        <h3>
+          Sílabo
+        </h3>
+
+        <p>
+          Revisa el sílabo para conocer la organización, los aprendizajes
+          y los lineamientos generales del curso.
+        </p>
+
+      </div>
+
+
+      <a
+        class="sise-syllabus-btn"
+        href="https://aulad.educad.pe/courses/638/pages/silabo-del-curso?module_item_id=5903">
+
+        Ver sílabo&nbsp; →
+
+      </a>
+
+
+    </div>
+
 
   </div>
 
-  <!-- PLANTILLA: EVALUACIÓN -->
+
+  <!-- =====================================================
+       EVALUACIÓN
+  ====================================================== -->
 
   <div
     id="sise-template-evaluacion"
@@ -1302,19 +1754,26 @@
     data-kicker="Evidencias de aprendizaje"
     data-title="¿Cómo serás evaluado?">
 
+
     <p>
       La evaluación combina actividades aplicadas en los dos módulos,
-      participación activa en el entorno virtual y un proyecto integrador
-      que evidencia el uso estratégico de IA en Canvas LMS.
+      participación activa en el entorno virtual y un proceso de
+      <strong>coevaluación entre pares</strong>.
     </p>
+
 
     <div class="sise-evaluation-grid">
 
+
       <article class="sise-evaluation-card">
 
-        <div class="sise-evaluation-icon">01</div>
+        <div class="sise-evaluation-icon">
+          01
+        </div>
 
-        <h3>Actividades de módulos</h3>
+        <h3>
+          Actividades de módulos
+        </h3>
 
         <p>
           Rediseño de una actividad Canvas con IA y configuración de una
@@ -1323,37 +1782,122 @@
 
       </article>
 
+
       <article class="sise-evaluation-card">
 
-        <div class="sise-evaluation-icon">02</div>
+        <div class="sise-evaluation-icon">
+          02
+        </div>
 
-        <h3>Participación activa</h3>
+        <h3>
+          Participación activa
+        </h3>
 
         <p>
-          Participación en foros, actividades reflexivas, comentarios y
-          procesos de retroalimentación entre pares.
+          Participación en foros, actividades reflexivas, comentarios
+          y procesos de retroalimentación entre pares.
         </p>
 
       </article>
 
-      <article class="sise-evaluation-card">
 
-        <div class="sise-evaluation-icon">03</div>
+      <article class="sise-evaluation-card sise-coeval-card">
 
-        <h3>Trabajo final</h3>
+        <div class="sise-evaluation-icon">
+          03
+        </div>
 
-        <p>
-          Rediseño integral de un aula real incorporando IA para actividades,
-          comunicación, evaluación y personalización del aprendizaje.
+        <h3>
+          Coevaluación
+        </h3>
+
+        <p class="sise-coeval-intro">
+          Revisa las evidencias de un compañero y realiza una valoración
+          utilizando la rúbrica de la actividad.
         </p>
 
+
+        <div
+          class="sise-coeval-flow"
+          aria-label="Flujo de coevaluación">
+
+
+          <div class="sise-coeval-step">
+
+            <strong>
+              01
+            </strong>
+
+            <span>
+              Revisa<br>
+              evidencias
+            </span>
+
+          </div>
+
+
+          <div class="sise-coeval-arrow">
+            ›
+          </div>
+
+
+          <div class="sise-coeval-step">
+
+            <strong>
+              02
+            </strong>
+
+            <span>
+              Aplica<br>
+              la rúbrica
+            </span>
+
+          </div>
+
+
+          <div class="sise-coeval-arrow">
+            ›
+          </div>
+
+
+          <div class="sise-coeval-step">
+
+            <strong>
+              03
+            </strong>
+
+            <span>
+              Retroalimenta
+            </span>
+
+          </div>
+
+
+        </div>
+
+
+        <button
+          type="button"
+          class="sise-coeval-manual-btn sise-open-coeval">
+
+          Manual de coevaluación&nbsp; →
+
+        </button>
+
+
       </article>
+
 
     </div>
 
+
     <div class="sise-pass-card">
 
-      <div class="sise-pass-number">17</div>
+
+      <div class="sise-pass-number">
+        17
+      </div>
+
 
       <p>
         Para aprobar el curso, el participante deberá presentar las
@@ -1361,91 +1905,320 @@
         <strong>nota mínima de 17</strong>.
       </p>
 
+
     </div>
+
 
   </div>
 
-  <!-- PLANTILLA: DESCARGABLES -->
+
+</div>
+
+
+<!-- =========================================================
+     MANUAL DE COEVALUACIÓN
+========================================================= -->
+
+<div
+  class="sise-coeval-modal"
+  id="sise-coeval-modal"
+  aria-hidden="true">
+
 
   <div
-    id="sise-template-descargables"
-    class="sise-template"
-    data-kicker="Materiales descargables"
-    data-title="Recursos y documentos de apoyo">
+    class="sise-coeval-modal-panel"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="sise-coeval-modal-title">
 
-    <div class="sise-download-content">
 
-      <div class="sise-download-icon">↓</div>
+    <div class="sise-coeval-modal-head">
 
-      <h3>Materiales del curso</h3>
 
-      <p>
-        Consulta el sílabo y los recursos de aprendizaje del curso: videos
-        interactivos, infografías, plantillas descargables, checklists,
-        guías prácticas, formularios Canvas y rúbricas analíticas.
+      <button
+        type="button"
+        class="sise-coeval-close"
+        aria-label="Cerrar manual">
+
+        ×
+
+      </button>
+
+
+      <small>
+        Guía rápida · Evaluación entre pares
+      </small>
+
+
+      <h3 id="sise-coeval-modal-title">
+        Manual de coevaluación
+      </h3>
+
+
+    </div>
+
+
+    <div class="sise-coeval-modal-body">
+
+
+      <p class="sise-coeval-modal-intro">
+        La coevaluación consiste en revisar el trabajo de un compañero
+        utilizando los criterios definidos en la rúbrica. La valoración debe
+        sustentarse en las evidencias presentadas.
       </p>
 
-      <div class="sise-download-actions">
 
-        <a
-          class="sise-download-btn"
-          href="https://aulad.educad.pe/courses/638/pages/silabo-del-curso?module_item_id=5903"
-          data-api-endpoint="https://aulad.educad.pe/api/v1/courses/536/pages/silabo-del-curso"
-          data-api-returntype="Page">
-          Descargar sílabo&nbsp; ↓
-        </a>
+      <div class="sise-manual-route">
 
-        <a
-          class="sise-download-btn sise-download-btn-alt"
-          href="#">
-          Archivos complementarios
-        </a>
+
+        <div class="sise-manual-step">
+
+          <div class="sise-manual-step-num">
+            01
+          </div>
+
+          <div>
+
+            <h4>
+              Lee la rúbrica
+            </h4>
+
+            <p>
+              Revisa los criterios, niveles de logro y descriptores antes
+              de iniciar la valoración.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="sise-manual-step">
+
+          <div class="sise-manual-step-num">
+            02
+          </div>
+
+          <div>
+
+            <h4>
+              Revisa las evidencias
+            </h4>
+
+            <p>
+              Observa el trabajo presentado por tu compañero e identifica
+              evidencias relacionadas con cada criterio.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="sise-manual-step">
+
+          <div class="sise-manual-step-num">
+            03
+          </div>
+
+          <div>
+
+            <h4>
+              Aplica la rúbrica
+            </h4>
+
+            <p>
+              Contrasta las evidencias con los descriptores y selecciona
+              el nivel de logro correspondiente.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="sise-manual-step">
+
+          <div class="sise-manual-step-num">
+            04
+          </div>
+
+          <div>
+
+            <h4>
+              Brinda retroalimentación
+            </h4>
+
+            <p>
+              Explica brevemente qué observaste, reconoce fortalezas y señala
+              una oportunidad concreta de mejora.
+            </p>
+
+          </div>
+
+        </div>
+
 
       </div>
 
+
+      <div class="sise-manual-note">
+
+        <strong>Recuerda:</strong>
+        realiza la valoración utilizando los criterios de la rúbrica
+        y sustenta tus comentarios en evidencias del trabajo revisado.
+
+      </div>
+
+
     </div>
+
 
   </div>
 
+
 </div>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
 
 <script>
 (function(){
 
-  var component = document.getElementById("sise-andragogia-home");
+  var component =
+    document.getElementById("sise-andragogia-home");
 
   if(!component){
     return;
   }
 
-  var buttons = component.querySelectorAll(".sise-nav-button");
-  var kicker = component.querySelector("#sise-dynamic-kicker");
-  var title = component.querySelector("#sise-dynamic-title");
-  var body = component.querySelector("#sise-dynamic-body");
+
+  var buttons =
+    component.querySelectorAll(".sise-nav-button");
+
+
+  var kicker =
+    component.querySelector("#sise-dynamic-kicker");
+
+
+  var title =
+    component.querySelector("#sise-dynamic-title");
+
+
+  var body =
+    component.querySelector("#sise-dynamic-body");
+
+
+  var modal =
+    component.querySelector("#sise-coeval-modal");
+
+
+  var closeModalButton =
+    component.querySelector(".sise-coeval-close");
+
+
+  /* =====================================================
+     ENLACES EXTERNOS
+  ====================================================== */
+
+  function prepareExternalLinks(container){
+
+    if(!container){
+      return;
+    }
+
+
+    var links =
+      container.querySelectorAll("a[href]");
+
+
+    links.forEach(function(link){
+
+      var href =
+        link.getAttribute("href");
+
+
+      if(
+        href &&
+        !href.startsWith("#") &&
+        !href.startsWith("javascript:")
+      ){
+
+        link.setAttribute(
+          "target",
+          "_blank"
+        );
+
+
+        link.setAttribute(
+          "rel",
+          "noopener noreferrer"
+        );
+
+      }
+
+    });
+
+  }
+
+
+  /* =====================================================
+     CAMBIO DE PESTAÑA
+  ====================================================== */
 
   function changeSection(section, selectedButton){
 
-    var template = component.querySelector(
-      "#sise-template-" + section
-    );
+
+    var template =
+      component.querySelector(
+        "#sise-template-" + section
+      );
+
 
     if(!template){
       return;
     }
 
-    kicker.textContent = template.getAttribute("data-kicker");
-    title.textContent = template.getAttribute("data-title");
 
-    body.style.animation = "none";
+    kicker.textContent =
+      template.getAttribute("data-kicker");
+
+
+    title.textContent =
+      template.getAttribute("data-title");
+
+
+    body.style.animation =
+      "none";
+
+
     body.offsetHeight;
-    body.innerHTML = template.innerHTML;
-    body.style.animation = "siseFadeIn .35s ease";
+
+
+    body.innerHTML =
+      template.innerHTML;
+
+
+    body.style.animation =
+      "siseFadeIn .35s ease";
+
+
+    prepareExternalLinks(body);
+
 
     buttons.forEach(function(button){
 
-      var isActive = button === selectedButton;
+      var isActive =
+        button === selectedButton;
 
-      button.classList.toggle("active", isActive);
+
+      button.classList.toggle(
+        "active",
+        isActive
+      );
+
 
       button.setAttribute(
         "aria-selected",
@@ -1456,50 +2229,148 @@
 
   }
 
+
   buttons.forEach(function(button){
 
-    button.addEventListener("click", function(){
+    button.addEventListener(
+      "click",
+      function(){
 
-      changeSection(
-        button.getAttribute("data-section"),
-        button
-      );
+        changeSection(
+          button.getAttribute("data-section"),
+          button
+        );
 
-    });
+      }
+    );
 
   });
+
+
+  /* =====================================================
+     MANUAL DE COEVALUACIÓN
+  ====================================================== */
+
+  function openCoevalManual(){
+
+    if(!modal){
+      return;
+    }
+
+
+    modal.classList.add(
+      "is-open"
+    );
+
+
+    modal.setAttribute(
+      "aria-hidden",
+      "false"
+    );
+
+
+    document.body.style.overflow =
+      "hidden";
+
+  }
+
+
+  function closeCoevalManual(){
+
+    if(!modal){
+      return;
+    }
+
+
+    modal.classList.remove(
+      "is-open"
+    );
+
+
+    modal.setAttribute(
+      "aria-hidden",
+      "true"
+    );
+
+
+    document.body.style.overflow =
+      "";
+
+  }
+
+
+  component.addEventListener(
+    "click",
+    function(event){
+
+
+      var manualButton =
+        event.target.closest(
+          ".sise-open-coeval"
+        );
+
+
+      if(manualButton){
+
+        event.preventDefault();
+
+        openCoevalManual();
+
+      }
+
+    }
+  );
+
+
+  if(closeModalButton){
+
+    closeModalButton.addEventListener(
+      "click",
+      closeCoevalManual
+    );
+
+  }
+
+
+  if(modal){
+
+    modal.addEventListener(
+      "click",
+      function(event){
+
+        if(event.target === modal){
+
+          closeCoevalManual();
+
+        }
+
+      }
+    );
+
+  }
+
+
+  document.addEventListener(
+    "keydown",
+    function(event){
+
+      if(
+        event.key === "Escape" &&
+        modal &&
+        modal.classList.contains("is-open")
+      ){
+
+        closeCoevalManual();
+
+      }
+
+    }
+  );
+
+
+  prepareExternalLinks(component);
 
 })();
 </script>
 
 </div>
-
-<script> 
-  document.addEventListener("DOMContentLoaded", function () {
-    const enlaces = document.querySelectorAll("a[href]");
-
-    enlaces.forEach(function (enlace) {
-      const destino = enlace.getAttribute("href");
-
-      if (
-        destino &&
-        !destino.startsWith("#") &&
-        !destino.startsWith("javascript:")
-      ) {
-        enlace.setAttribute("target", "_blank");
-        enlace.setAttribute("rel", "noopener noreferrer");
-
-        enlace.addEventListener("click", function (evento) {
-          evento.preventDefault();
-          evento.stopPropagation();
-
-          const url = enlace.href;
-
-          if (url) {
-            window.open(url, "_blank", "noopener,noreferrer");
-          }
-        });
-      }
-    });
-  });
-</script>
